@@ -1,0 +1,23 @@
+{
+  "name": "node-ts-template",
+  "version": "1.0.0",
+  "description": "Node Typescript template, set up for hot reload on docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "run": "node dist/index.js",
+    "run:watch": "nodemon dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroFabianCampos/node-ts-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlejandroFabianCampos/node-ts-template/issues"
+  },
+  "homepage": "https://github.com/AlejandroFabianCampos/node-ts-template#readme"
+}
