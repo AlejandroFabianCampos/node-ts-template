@@ -6,15 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "build:watch": "tsc -w",
+    "build:watch": "tsc -w --preserveWatchOutput",
     "run": "node dist/index.js",
-    "run:watch": "nodemon dist/index.js"
+    "run:watch": "nodemon dist/index.js",
+    "run:dev": "npm run build:watch & npm run run:watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.5",
+    "nodemon": "^2.0.15"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlejandroFabianCampos/node-ts-template.git"
   },
-  "author": "",
+  "author": "Alejandro Fabian Campos <camposalejandrofabian@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AlejandroFabianCampos/node-ts-template/issues"

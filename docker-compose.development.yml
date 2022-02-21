@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  dev-server:
+    build: 
+      context: .
+      dockerfile: Dockerfile.development
+    volumes:
+      - ./:/usr/src/app
